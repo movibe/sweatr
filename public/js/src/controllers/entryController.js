@@ -39,7 +39,7 @@ controller('EntryController', function($interval, $scope) {
   var takingNames = function() {
     var index = Math.floor(Math.random() * names.length); 
     $scope.opposition = names[index];
-  }
+  };
 
   // initialize the opposition
   // takingNames();
@@ -49,7 +49,7 @@ controller('EntryController', function($interval, $scope) {
   setInterval(function() {
     $scope.$apply(function() {
       takingNames();
-    })
+    });
   }, 1800);
 
 });
